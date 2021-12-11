@@ -6,6 +6,17 @@ html, body{
     height: 100%;
 }
 
+html {
+    background: url("./background-image.jfif") no-repeat center center fixed;
+    width: auto;
+    background-size: cover;
+}
+
+body {
+    display: flex;
+    
+}
+
 #root {
     width: 100%;
     height: 100%;
