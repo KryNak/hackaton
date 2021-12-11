@@ -1,4 +1,4 @@
-.background {
+html {
     max-width: 100%;
     min-width: 600px;
     height: auto;
@@ -6,7 +6,6 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    background-color: red;
 }
 
 .rect{
@@ -17,9 +16,20 @@
 }
 
 .container{
-    
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
 }
 
 .logo{
     height: 80px;
+}
+
+.join{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
 }
