@@ -1,27 +1,25 @@
-:root{
-    --rect-left-margin: 1em;
-    --rect-top-margin: 1em;
-}
-
 .main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
     gap: 4em;
+    height: 100%;
 }
 
 .logo{
-    min-height: 80px;
     height: 80px;
+    margin-top: 2em;
 }
 
 .sub-container{
-    flex-wrap: wrap;
     display: flex;
-    flex-direction: row;
-    gap: 5em;
+    justify-content: center;
+}
+
+#phone {
+    height: 575px;
+    width: 325px;
 }
 
 .rect{
@@ -41,7 +39,7 @@
     font-size: 36px;
     line-height: 42px;
     color: black;
-    margin-left: var(--rect-left-margin);
+    margin-left: 1em;
     margin-top: 1em;
 }
 
@@ -57,7 +55,77 @@
     margin-left: 2em;
 }
 
-img{
-    width: attr(width);
-    width: attr(height);
+@media screen and (max-height: 710px) {
+    .main-container{
+        height: unset;
+    }
+}
+
+@media screen and (max-width: 900px)  {
+
+    .main-container{
+        gap: 1em;
+        height: unset;
+        width: unset;
+    }
+
+    .sub-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+        width: unset;
+    }
+
+    .rect{
+        width: 100%;
+        height: 320px;
+        align-items: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        justify-content:center;
+    }
+
+    .text{
+        margin-left: 0em;
+        width: 100%;
+    }
+
+    .market{
+        margin-left: 0em;
+        display: flex;
+        justify-content: space-between;
+        gap: 0.5em;
+        width: 100%;
+    }
+
+    .social-icons{
+        margin-left: 0em;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 449px) {
+    .social-icons{
+        display: none;
+    }
+
+    .market {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text{
+        text-align: center;
+    }
+
+    .rect{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
