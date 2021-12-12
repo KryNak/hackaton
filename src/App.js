@@ -7,7 +7,7 @@ function App() {
       <img width="100%" height="100%" className="logo" src="logo.svg" alt="logo"></img>
 
       <div className="sub-container">
-        <img id="phone" height="100%" width="100%" alt="phone" src="mock.png"></img>
+        <img id="phone" height="100%" width="100%" alt="phone" src="phone.svg"></img>
         <div className="rect">
           <div className="text">Join today - it's free!</div>
           <div className="market">
